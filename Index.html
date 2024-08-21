@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<title>Bienvenidos</title>
+	<script>
+        function displayWelcomeMessage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const surname = urlParams.get('surname');
+            const welcomeMessage = `Bienvenido a la biblioteca, ${name} ${surname}!`;
+            document.getElementById('welcomeMessage').textContent = welcomeMessage;
+        }
+        window.onload = displayWelcomeMessage;
+    </script>
+	<style type="text/css">
+		h1{
+			font-family:optima ;
+			font-size: 40px;
+			color: black;
+		}
+		h2{
+			font-family: perpetua;
+			color: black;
+		}
+		body{
+			background-image: url(https://global.tiffin.edu/img/article/por-que-estudiar-ingenierias-en-linea-en-sistemas-computacionales.webp);
+			background-repeat: no-repeat;
+			background-position: center ;
+			background-attachment: fixed;
+			background-size: cover
+
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-4 text-center jumbotron" style="margin-top:80px ;" >
+		 <h1 id="welcomeMessage">Bienvenido a la biblioteca!</h1>
+			<h1> Selecciona tu Carrera </h1>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7UGMWjksdoX1dG7fzjXHxbck1nGKFytIXcw&s" class="rounded-circle">
+			<div>
+				<a href="IngSis.html">
+					<h2>Ingenieria en Sistemas</h2>
+				</a>
+			</div>
+			<div>
+				<a href="ingindu.html">
+					<h2>Ingenieria Industrial</h2>
+				</a>
+			</div>
+			<div>
+				<a href="Ingcivil.html">
+					<h2>Ingenieria Civil</h2>
+				</a>
+			</div>
+			<div>
+				<a href="IngElec.html">
+					<h2>Ingenieria Electrica</h2>
+				</a>
+			</div>
+			<div>
+				<a href="Hidro.html">
+					<h2>Ingeniera Hidroelectrica</h2>
+				</a>
+			</div>
+			<div>
+				<a href="Mec.html">
+					<h2>Ingeniera Mectronica</h2>
+				</a>
+			</div>
+			<div>
+				<a href="Quim.html">
+					<h2>Ingenieria Quimica</h2>
+				</a>
+			</div>
+
+			<div>
+				<a href="Formulario.html">
+					<button type="button" >
+						<img src="https://images.freeimages.com/clg/images/25/254076/power-off-icon_f" width="30px">
+					</button>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="col-md-4"></div>
+	</div>
+
+
+</body>
+</html>
